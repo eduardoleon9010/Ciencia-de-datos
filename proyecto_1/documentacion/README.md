@@ -30,12 +30,11 @@ El archivo listings_m.xlsx en la carpeta data/ contiene los datos utilizados en 
 Requisitos de Software
 
 Para ejecutar el código proporcionado en este repositorio, se requiere tener instalado Python junto con las siguientes bibliotecas:
-    pandas
-    numpy
-    matplotlib
-    seaborn
-    scikit-learn
-    tensorflow (opcional, dependiendo de los proyectos)
+    - pandas
+    - numpy
+    - matplotlib
+    - seaborn
+    - scikit-learn
 
 ## Contribuciones
 Se aceptan contribuciones en forma de nuevos proyectos, mejoras en el código o correcciones de errores. Para contribuir, simplemente envía un pull request y será revisado por el equipo.
