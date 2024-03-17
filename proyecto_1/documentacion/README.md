@@ -20,9 +20,10 @@ El repositorio está organizado de la siguiente manera:
     - exploracion.ipynb     # Jupyter Notebook con el código de exploración de datos
     - limpieza.ipynb         # Jupyter Notebook con el código de limpieza de datos
 - documentation/
+    - README.md                  # Documentación general del repositorio
     - informe.pdf            # Informe detallado del proyecto
     - presentacion.pptx      # Presentación en PowerPoint
-- README.md                  # Documentación general del repositorio
+
 
 ## Conjuntos de Datos
 El archivo listings_m.xlsx en la carpeta data/ contiene los datos utilizados en el análisis. Este archivo se compone de múltiples variables que describen distintos aspectos de los alojamientos listados en Airbnb.
