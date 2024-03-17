@@ -12,9 +12,6 @@
 # 
 # 1. Existe algún grado de correlación lineal entre los puntajes de revisión y comunicación en los registros de Airbnb.
 # 2. Existe alguna correlación entre el precio del alquiler y el número de habitaciones en las propiedades listadas en Airbnb.
-# 
-
-# In[107]:
 
 
 # Importar las librerías necesarias según el análisis que se vaya a realizar
@@ -22,10 +19,6 @@ import os  # Librería para comando de sistema
 import pandas as pd  # Librería para manejo de datos
 import matplotlib.pyplot as plt  # Librería para gráficos
 import numpy as np  # Librería para computación numérica
-
-
-
-# In[108]:
 
 
 # Especifica la ruta al archivo Excel
@@ -41,11 +34,6 @@ try:
     
 except Exception as e:
     print("Se produjo un error al leer el archivo Excel:", e)
-
-
-
-
-# In[109]:
 
 
 # Especifica la ruta al archivo Excel
@@ -64,10 +52,6 @@ try:
     
 except Exception as e:
     print("Se produjo un error al leer el archivo Excel:", e)
-
-
-
-# In[110]:
 
 
 # Intenta leer el archivo Excel en un DataFrame de Pandas
@@ -89,9 +73,6 @@ except Exception as e:
     print("Se produjo un error al leer el archivo Excel:", e)
 
 
-# In[111]:
-
-
 # Importar la librería necesaria
 import seaborn as sns
 
@@ -110,10 +91,6 @@ plt.legend(title='Room Type')  # Agregar leyenda
 plt.grid(True)
 plt.show()
 
-
-# In[112]:
-
-
 # Importar la librería necesaria
 import seaborn as sns
 
@@ -131,13 +108,6 @@ plt.ylabel('Review Scores Communication')
 plt.legend(title='Room Type')  # Agregar leyenda
 plt.grid(True)
 plt.show()
-
-
-
-
-
-
-# In[113]:
 
 
 from scipy.stats import spearmanr
@@ -161,9 +131,6 @@ print("Valor p:", p_value)
 # 
 # Dado el resultado del coeficiente de correlación de Spearman de aproximadamente 0.43 y un valor p muy bajo (cercano a 0), podemos inferir que existe una correlación positiva significativa entre los puntajes de revisión y los puntajes de comunicación en los listados de Airbnb. Esto sugiere que, en general, los listados que reciben puntajes altos en comunicación también tienden a recibir puntajes altos en general.
 # Sin embargo, es importante recordar que el coeficiente de correlación de Spearman evalúa la relación monótona entre las variables, no necesariamente la correlación lineal directa. Por lo tanto, aunque podemos inferir una asociación positiva entre los puntajes de revisión y comunicación, no podemos concluir directamente que haya una relación lineal entre ellas.
-# 
-
-# In[114]:
 
 
 # Filtra las columnas del DataFrame que contienen las variables específicas
@@ -171,10 +138,6 @@ columnas_filtradas = df_excel.filter(regex='price|bedrooms')
 
 # Muestra las primeras filas del DataFrame filtrado
 print(columnas_filtradas.head())
-
-
-
-# In[115]:
 
 
 # Verificamos si la columna 'price' existe en el DataFrame
@@ -185,9 +148,6 @@ if 'price' in df_excel.columns:
     print(df_excel.head())
 else:
     print("La columna 'price' no existe en el DataFrame.")
-
-
-# In[116]:
 
 
 import pandas as pd
@@ -226,9 +186,6 @@ except Exception as e:
     print("Se produjo un error al leer el archivo Excel:", e)
 
 
-# In[117]:
-
-
 # Extrae las variables de interés para el diagrama de dispersión
 x = df_excel['price']
 y = df_excel['bedrooms']
@@ -241,9 +198,6 @@ plt.xlabel('Price')
 plt.ylabel('Bedrooms')
 plt.grid(True)
 plt.show()
-
-
-# In[118]:
 
 
 # Calcula el coeficiente de correlación de Spearman
@@ -269,51 +223,3 @@ print("Valor p:", p_value)
 #     Se han excluido valores nulos, iguales a 0 y aquellos que superan ciertos umbrales (400 para el precio del alquiler y 5 para el número de habitaciones) mediante el uso de diagramas de caja (boxplot).
 # 
 # Los análisis sugieren que tanto la comunicación como el precio del alquiler pueden influir en las calificaciones de los huéspedes, y que el precio del alquiler está correlacionado con el número de habitaciones en las propiedades listadas. Sin embargo, es importante recordar que la correlación no implica causalidad y que otros factores también pueden influir en estas relaciones.
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
