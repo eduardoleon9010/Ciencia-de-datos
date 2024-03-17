@@ -1,4 +1,3 @@
-
 # Proyecto de Ciencia de Datos: Análisis de Airbnb
 
 ## Descripción
@@ -42,3 +41,4 @@ Se aceptan contribuciones en forma de nuevos proyectos, mejoras en el código o 
 
 ## Licencia
 Este proyecto está bajo la Licencia MIT.
+
