@@ -13,15 +13,6 @@ El repositorio está organizado de la siguiente manera:
         datos/: Directorio que almacena los conjuntos de datos utilizados en el proyecto 1.
         documentacion/: Carpeta que contiene documentos relacionados con el proyecto 1, como informes, presentaciones y cualquier otra documentación relevante.
 
-    Proyecto 2: Descripción breve del proyecto 2.
-        codigo/: Directorio que contiene los scripts y notebooks de Python utilizados en el proyecto 2.
-        datos/: Directorio que almacena los conjuntos de datos utilizados en el proyecto 2.
-        documentacion/: Carpeta que contiene documentos relacionados con el proyecto 2, como informes, presentaciones y cualquier otra documentación relevante.
-
-    Proyecto 3: Descripción breve del proyecto 3.
-        codigo/: Directorio que contiene los scripts y notebooks de Python utilizados en el proyecto 3.
-        datos/: Directorio que almacena los conjuntos de datos utilizados en el proyecto 3.
-        documentacion/: Carpeta que contiene documentos relacionados con el proyecto 3, como informes, presentaciones y cualquier otra documentación relevante.
 
 ## Conjuntos de Datos
 Los conjuntos de datos utilizados en cada proyecto se almacenan en la carpeta datos/. Cada conjunto de datos está acompañado de una descripción detallada que incluye información sobre la fuente de los datos, la estructura y cualquier transformación realizada.
